@@ -9,3 +9,6 @@ get '/:name' do
     @name = params[:name]
     erb :greet
 end
+
+get '/' do
+    end

@@ -1,10 +1,17 @@
 require 'sinatra'
 
 get '/' do
-    "hello"
+    "Hello"
 end
 
 
-# get '/:name' do
-#     params[:name]
-# end
+ get '/:name' do
+     "Hello #{params[:name]}"
+     raise
+ end
+
+####Cant do 'bye' 
+ get '/:name/"bye"' do
+    "Goodbye #{params[:name]}"
+    #raise
+end
